@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<ruleset name="CustomizedEcgRules">
+    <description>Customized ECG Coding Standard</description>
+
+    <rule ref="../../../magento-ecg/coding-standard/Ecg/ruleset.xml"/>
+
+    <!-- ECG's Sniffs _Start_ -->
+
+    <!-- error -->
+    <rule ref="Ecg.Security.ForbiddenFunction.Found">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Ecg.Security.ForbiddenFunction.FoundWithAlternative">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Ecg.Security.LanguageConstruct.WrongBackQuotesUsage">
+        <severity>8</severity>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Ecg.Security.Superglobal.SuperglobalUsage">
+        <severity>8</severity>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Ecg.Strings.StringConcat.Found">
+        <severity>8</severity>
+    </rule>
+
+
+    <!-- warning -->
+    <rule ref="Ecg.Classes.Mysql4.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Classes.ObjectInstantiation.DirectInstantiation">
+        <severity>8</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Performance.CollectionCount.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Performance.FetchAll.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Performance.GetFirstItem.Found">
+        <severity>8</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Performance.Loop.ArraySize">
+        <severity>7</severity>
+    </rule>
+    <rule ref="Ecg.Performance.Loop.ModelLSD">
+        <severity>7</severity>
+    </rule>
+    <rule ref="Ecg.Performance.Loop.DataLoad">
+        <severity>7</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.PHP.Goto.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.PHP.Var.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Security.ForbiddenFunction.Discouraged">
+        <severity>6</severity>
+    </rule>
+    <rule ref="Ecg.Security.ForbiddenFunction.DiscouragedWithAlternative">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Security.IncludeFile.IncludeFileDetected">
+        <severity>7</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Security.LanguageConstruct.ExitUsage">
+        <severity>6</severity>
+    </rule>
+    <rule ref="Ecg.Security.LanguageConstruct.DirectOutput">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Sql.RawQuery.RawSql">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Sql.SlowQuery.SlowRawSql">
+        <severity>6</severity>
+    </rule>
+    <rule ref="Ecg.Sql.SlowQuery.SlowSql">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Strings.RegEx.PossibleExecutableRegEx">
+        <severity>7</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Ecg.Strings.StringPosition.ImproperValueTesting">
+        <severity>7</severity>
+    </rule>
+
+    <!-- ECG's Sniffs _End_ -->
+
+
+    <!-- PHP_CodeSniffer's Sniffs _Start_ -->
+
+    <!-- error -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedCATCH">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedDO">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedELSE">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedFOR">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedIF">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedSWITCH">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedTRY">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedWHILE">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.Commenting.Fixme.CommentFound">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.Commenting.Fixme.TaskFound">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.Files.ByteOrderMark.Found">
+        <severity>8</severity>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.Files.OneClassPerFile.MultipleFound">
+        <severity>8</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.Files.OneInterfacePerFile.MultipleFound">
+        <severity>8</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.Functions.CallTimePassByReference.NotAllowed">
+        <severity>8</severity>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.Metrics.CyclomaticComplexity.MaxExceeded">
+        <severity>8</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.Metrics.NestingLevel.MaxExceeded">
+        <severity>8</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag.Found">
+        <severity>10</severity>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.PHP.DeprecatedFunctions.Deprecated">
+        <severity>7</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Generic.PHP.NoSilencedErrors.Forbidden">
+        <severity>7</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Squiz.Operators.IncrementDecrementUsage.NotAllowed">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Squiz.Operators.IncrementDecrementUsage.NoBrackets">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+    <rule ref="Squiz.Operators.IncrementDecrementUsage">
+        <severity>6</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Squiz.PHP.GlobalKeyword.NotAllowed">
+        <severity>15</severity>
+        <type>warning</type>
+    </rule>
+
+    <!-- error -->
+    <rule ref="Zend.Files.ClosingTag.NotAllowed">
+        <severity>10</severity>
+    </rule>
+
+
+    <!-- warning -->
+    <rule ref="Generic.Classes.DuplicateClassName.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop.CanSimplify">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed">
+        <severity>7</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.CodeAnalysis.JumbledIncrementer.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod.Found">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.Commenting.Todo.CommentFound">
+        <severity>6</severity>
+    </rule>
+    <rule ref="Generic.Commenting.Todo.TaskFound">
+        <severity>6</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.Metrics.CyclomaticComplexity.TooHigh">
+        <severity>8</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.Metrics.NestingLevel.TooHigh">
+        <severity>8</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Generic.PHP.NoSilencedErrors.Discouraged">
+        <severity>7</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Squiz.Functions.GlobalFunction.Found">
+        <severity>7</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Squiz.PHP.DiscouragedFunctions.Discouraged">
+        <severity>7</severity>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Squiz.PHP.Eval.Discouraged">
+        <severity>10</severity>
+        <type>error</type>
+    </rule>
+
+    <!-- warning -->
+    <rule ref="Squiz.PHP.NonExecutableCode.ReturnNotRequired">
+        <severity>7</severity>
+    </rule>
+    <rule ref="Squiz.PHP.NonExecutableCode.Unreachable">
+        <severity>7</severity>
+    </rule>
+
+    <!-- PHP_CodeSniffer's Sniffs _End_ -->
+</ruleset>
